@@ -1,13 +1,25 @@
-# DETR-based Object Detection on BDD100K
+# DETR-based Object Detection on BDD100K (Sample)
 
-This repository contains an implementation of **DETR (DEtection TRansformer)** for object detection on a **BDD100K sample dataset**.
+This repository contains a simple **DETR (DEtection TRansformer)** pipeline for object detection on a **BDD100K sample dataset (COCO format)**.
 
-The project supports:
-- Training DETR on BDD100K (COCO format)
-- Running inference on test images
-- Reproducible execution using **Google Colab**
+✅ Includes:
+- Training script (`src/train.py`)
+- Inference script (`src/inference.py`)
+- Colab notebook (`notebooks/BDD100K_DETR_Object_Detection.ipynb`) for easy reproduction
+
+> Note: Dataset and trained model files are NOT included in this repo to keep it lightweight.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
+```bash
+.
+├── notebooks/
+│   └── BDD100K_DETR_Object_Detection.ipynb
+├── src/
+│   ├── make_coco.py
+│   ├── train.py
+│   └── inference.py
+├── .gitignore
+└── README.md
