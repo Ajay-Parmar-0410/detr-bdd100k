@@ -1,0 +1,15 @@
+# Ignore dataset
+data/
+
+# Ignore outputs (models, predictions)
+outputs/
+
+# Ignore virtual environment
+.venv/
+
+# Ignore large files
+*.safetensors
+*.zip
+
+# Python cache
+__pycache__/
