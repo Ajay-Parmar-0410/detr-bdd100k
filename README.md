@@ -37,3 +37,21 @@ The project is designed to be **fully reproducible on Google Colab**, enabling r
 │   └── inference.py        # Inference & visualization
 ├── .gitignore
 └── README.md
+---
+
+## Reproducibility (For Reviewers)
+
+This project is fully reproducible using Google Colab.
+
+### Steps:
+1. Click the **Open in Colab** badge above
+2. Run all cells sequentially
+3. Approve Google Drive access when prompted
+4. The notebook will:
+   - Download a BDD100K sample dataset from Google Drive
+   - Verify COCO annotations
+   - Run a short sanity training
+   - Perform inference and visualize predictions
+
+> Note: Full BDD100K is not included due to size constraints.  
+> A representative sample is used for demonstration.
