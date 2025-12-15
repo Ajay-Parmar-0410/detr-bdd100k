@@ -2,29 +2,38 @@
 https://colab.research.google.com/github/Ajay-Parmar-0410/detr-bdd100k/blob/main/notebooks/BDD100K_DETR_Object_Detection.ipynb
 )
 
-
 # DETR-based Object Detection on BDD100K (Sample)
 
-This repository contains a simple **DETR (DEtection TRansformer)** pipeline for object detection on a **BDD100K sample dataset (COCO format)**.
+This repository demonstrates an **end-to-end object detection pipeline using DETR (DEtection TRansformer)** on a **sample subset of the BDD100K dataset**, formatted in **COCO style**.
 
-✅ Includes:
-- Training script (`src/train.py`)
-- Inference script (`src/inference.py`)
-- Colab notebook (`notebooks/BDD100K_DETR_Object_Detection.ipynb`) for easy reproduction
-
-> Note: Dataset and trained model files are NOT included in this repo to keep it lightweight.
+The project is designed to be **fully reproducible on Google Colab**, enabling reviewers to run the complete pipeline without local setup.
 
 ---
 
-## Repository Structure
+## ✅ Key Features
+- DETR with **ResNet-50 backbone**
+- COCO-format annotations
+- Lightweight **BDD100K sample dataset**
+- End-to-end pipeline:
+  - Dataset download & extraction
+  - Annotation verification
+  - Sanity training
+  - Inference & visualization
+
+> ⚠️ Dataset files and trained weights are **not stored in this repository** to keep it lightweight.  
+> The dataset is automatically downloaded from **Google Drive** inside the Colab notebook.
+
+---
+
+## 📂 Repository Structure
 
 ```bash
 .
 ├── notebooks/
 │   └── BDD100K_DETR_Object_Detection.ipynb
 ├── src/
-│   ├── make_coco.py
-│   ├── train.py
-│   └── inference.py
+│   ├── make_coco.py        # COCO conversion utility
+│   ├── train.py            # DETR training script
+│   └── inference.py        # Inference & visualization
 ├── .gitignore
 └── README.md
