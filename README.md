@@ -1,5 +1,5 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]
-(https://colab.research.google.com/github/Ajay-Parmar-0410/detr-bdd100k/blob/main/notebooks/BDD100K_DETR_Object_Detection.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Ajay-Parmar-0410/detr-bdd100k/blob/main/notebooks/BDD100K_DETR_Object_Detection.ipynb)
+
 
 # DETR-based Object Detection on BDD100K (Sample)
 
